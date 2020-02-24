@@ -4,7 +4,7 @@ import numpy as np
 
 CITY_DATA = {'chicago': 'chicago.csv',
 'new york city': 'new_york_city.csv',
-'washington': 'washington.csv' }
+'washington': 'washington.csv'}
 days = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Saturday', 'All']
 months = ['January','February', 'March', 'April', 'May', 'June','All']
 input_filter = ['month', 'day', 'both']
@@ -122,8 +122,7 @@ def get_filters():
             print('you have selected :',city)
             break
     while True:
-        print('Would you like to filter by month, day or both?')
-        date_filter = input('Please enter response: ')
+        date_filter = input('Would you like to filter by month, day or both?')
         if date_filter.lower() not in input_filter:
             print('Please enter the correct filter')
         else:
