@@ -62,10 +62,10 @@ def get_month():
 
         returns:  month from user input
     '''
-    print('Enter month(or number next to month, e.g 1 = January) or "all" to apply no month filter')
+   
     for num, month_ in enumerate(months, start=1):
         print(" {}. {}".format(num, month_))
-    month = input('Please enter month  : ')
+    month = input('Enter month(or number next to month, e.g 1 = January) or "all" to apply no month filter : ')
     return month.lower()
 
 def get_day():
