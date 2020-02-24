@@ -75,10 +75,9 @@ def get_day():
 
         returns:day from user input
     '''
-    print('Enter day of week(or number next to day, e.g 1 = sunday) or "all" to apply no day filter')
     for num, day_ in enumerate(days, start=1):
         print(" {}. {}".format(num, day_))
-    day = input('Please enter Day of week : ')
+    day = input('Enter day of week(or number next to day, e.g 1 = sunday) or "all" to apply no day filter:')
     return day
 
 def day_of_week_format(day):
