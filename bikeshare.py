@@ -270,6 +270,9 @@ def user_stats(df):
     print('-'*40)
 
 def main():
+    '''
+        This is the main function for computing the stats for bikeshare system
+    '''
     while True:
         try:
             city, month, day = get_filters()
