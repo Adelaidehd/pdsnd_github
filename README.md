@@ -32,3 +32,8 @@ www.atlassian.com
 pandas.pydata.org
 www.openbookproject.net
 www.tutorialspoint.com
+<<<<<<< HEAD
+https://classroom.udacity.com/
+=======
+https://www.google.com/
+>>>>>>> documentation
