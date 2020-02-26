@@ -33,7 +33,11 @@ pandas.pydata.org
 www.openbookproject.net
 www.tutorialspoint.com
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://classroom.udacity.com/
+=======
+https://www.google.com/
+>>>>>>> documentation
 =======
 https://www.google.com/
 >>>>>>> documentation
