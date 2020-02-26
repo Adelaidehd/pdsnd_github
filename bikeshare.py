@@ -272,6 +272,7 @@ def user_stats(df):
 def main():
     '''
         This is the main function for computing the stats for bikeshare system
+        and displays the results on the terminal
     '''
     while True:
         try:
