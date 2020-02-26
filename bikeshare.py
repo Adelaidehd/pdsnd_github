@@ -2,9 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+CITY_DATA = {'chicago': 'chicago.csv',
 'new york city': 'new_york_city.csv',
-'washington': 'washington.csv' }
+'washington': 'washington.csv'}
 days = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday','Saturday', 'All']
 months = ['January','February', 'March', 'April', 'May', 'June','All']
 input_filter = ['month', 'day', 'both']
@@ -62,10 +62,10 @@ def get_month():
 
         returns:  month from user input
     '''
-    print('Enter month(or number next to month, e.g 1 = January) or "all" to apply no month filter')
+   
     for num, month_ in enumerate(months, start=1):
         print(" {}. {}".format(num, month_))
-    month = input('Please enter month  : ')
+    month = input('Enter month(or number next to month, e.g 1 = January) or "all" to apply no month filter : ')
     return month.lower()
 
 def get_day():
@@ -75,10 +75,9 @@ def get_day():
 
         returns:day from user input
     '''
-    print('Enter day of week(or number next to day, e.g 1 = sunday) or "all" to apply no day filter')
     for num, day_ in enumerate(days, start=1):
         print(" {}. {}".format(num, day_))
-    day = input('Please enter Day of week : ')
+    day = input('Enter day of week(or number next to day, e.g 1 = sunday) or "all" to apply no day filter:')
     return day
 
 def day_of_week_format(day):
@@ -123,8 +122,7 @@ def get_filters():
             print('you have selected :',city)
             break
     while True:
-        print('Would you like to filter by month, day or both?')
-        date_filter = input('Please enter response: ')
+        date_filter = input('Would you like to filter by month, day or both?')
         if date_filter.lower() not in input_filter:
             print('Please enter the correct filter')
         else:
@@ -270,6 +268,10 @@ def user_stats(df):
     print('-'*40)
 
 def main():
+    '''
+        This is the main function for computing the stats for bikeshare system
+        and displays the results on the terminal
+    '''
     while True:
         try:
             city, month, day = get_filters()
